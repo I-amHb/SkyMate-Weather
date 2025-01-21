@@ -6,7 +6,7 @@ function HomeWeatherCards() {
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
 
-    const apiKey = import.meta.env.VITE_API_KEY_WEATHER_API_KEY;
+    const apiKey = import.meta.env.VITE_WEATHER_API_KEY;
     const cities = ['New York', 'London', 'Paris', 'Abuja', 'Tokyo', 'Rio'];
 
     useEffect(() => {

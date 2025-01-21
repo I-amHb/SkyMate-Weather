@@ -2,7 +2,8 @@ import React from 'react'
 
 function WeatherCard({ weatherData }) {
   return (
-    <div className='w-[350px] h-[400px] flex flex-col gap-2 justify-evenly shadow-custom rounded-md md:w-[500px] '>
+    <div className='w-[390px] h-[400px] bg-white flex flex-col gap-6 justify-evenly 
+                        shadow-custom rounded-md md:w-[500px] border-[3px] border-[#2a93bd] mb-7 '>
         <div className=' w-full h-[150px] flex'>
             <div className='w-1/3 flex flex-col gap-1 p-1 justify-center '>
                 <div>
@@ -20,7 +21,7 @@ function WeatherCard({ weatherData }) {
         </div>
         <div className=' w-full h-[100px] flex flex-col justify-center '>
             <h1 className=' h-full text-[60px] text-center'>
-                {weatherData.main.temp}℃
+                {Math.round(weatherData.main.temp)}℃
             </h1>
         </div>
         <div className=' w-full h-[100px] flex flex-row justify-evenly items-center '>

@@ -12,7 +12,7 @@ function Searchbar({ onSearch }) {
   }
 
   return (
-    <div className='w-full h-[80px] flex flex-row justify-center items-center gap-3 '>
+    <div className='w-full h-[180px] flex flex-row justify-center items-center gap-3 '>
        <input className=' p-4 bg-slate-500 h-10  min-w-[20px] md:min-w-[350px] rounded-3xl ' 
        type="text" 
        name="search" 

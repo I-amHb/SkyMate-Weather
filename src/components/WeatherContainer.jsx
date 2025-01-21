@@ -8,7 +8,7 @@ function WeatherContainer() {
   const [weatherData, setWeatherData] = useState(null);
   const [error, setError] = useState(null);
 
-  const apiKey = '56aea3b189c33067318c473c6b463b02';
+  const apiKey = import.meta.env.VITE_API_KEY_WEATHER_API_KEY;
 
   // function to fetch weather data
   const fetchWeather = (cityName) => {

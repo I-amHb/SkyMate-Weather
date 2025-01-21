@@ -1,13 +1,13 @@
 import React from 'react';
 import { useState } from 'react';
 
-function Searchbar({ onCityChange }) {
+function Searchbar({ onSearch }) {
 
   const [inputValue, setInputValue] = useState('')
 
   const handleSearch = () => {
     if (inputValue.trim()) {
-      onCityChange(inputValue.trim());
+      onSearch(inputValue.trim());
     }
   }
 

@@ -1,5 +1,6 @@
 import React from 'react'
 import WeatherCard from './WeatherCard'
+import HomeWeatherCards from './HomeWeatherCards'
 
 function CardSection({ weatherData, error }) {
   return (
@@ -9,7 +10,7 @@ function CardSection({ weatherData, error }) {
         ) : weatherData ? (
           <WeatherCard weatherData={weatherData} />
         ) : (
-          <p>Your trusted Weather Companion</p>
+          <HomeWeatherCards/>
         )}
     </div>
   )

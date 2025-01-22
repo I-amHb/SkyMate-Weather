@@ -13,7 +13,7 @@ function WeatherContainer() {
   // function to fetch weather data
   const fetchWeather = (cityName) => {
 
-    const geoCodingApi = "http://api.openweathermap.org/geo/1.0/direct";
+    const geoCodingApi = "https://api.openweathermap.org/geo/1.0/direct";
     const geoUrl = `${geoCodingApi}?q=${cityName}&limit=5&appid=${apiKey}`;
 
     // fetch weather coordinates

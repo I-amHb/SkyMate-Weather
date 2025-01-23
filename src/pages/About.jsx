@@ -1,8 +1,10 @@
 import React from 'react'
-
+import AboutContent from '../components/AboutContent'
 function About() {
   return (
-    <div>About</div>
+    <div className='w-full h-auto flex flex-col justify-center items-center'>
+      <AboutContent/>
+      </div>
   )
 }
 

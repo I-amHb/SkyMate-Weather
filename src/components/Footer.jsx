@@ -5,7 +5,7 @@ const Footer = () => {
             <div className='md:w-full'>
                 <div><h1 className=' text-[20px] font-bold'>SkyMate</h1></div>
                 <div className=''>
-                    <ul className='md:list-none md:flex  md:space-x-[150px]'>
+                    <ul className='flex flex-col items-center md:list-none md:flex md:flex-row  md:space-x-[150px]'>
                         <li>About</li>
                         <li>Support</li>
                         <li>Products</li>

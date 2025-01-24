@@ -35,7 +35,7 @@ function Navbar() {
                             isActive
                                 ? 'bg-[#2a93bd] w-20 h-10 flex justify-center items-center rounded-sm'
                                 : 'w-20 h-10 flex justify-center items-center hover:border-b-[#2a93bd] hover:border-b-[2px]'
-                        } to='/contact' >Contact Us</NavLink>
+                        } to='/contact' >Contact</NavLink>
                     </div>
                     {/* Hamburger menu for smaller screens */}
                     <div className="md:hidden">

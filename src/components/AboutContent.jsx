@@ -2,7 +2,7 @@ import React from 'react'
 
 function AboutContent() {
   return (
-    <div className='w-full h-auto flex flex-col justify-center font-serif items-center  my-5 mb-10'>
+    <div className='w-full h-auto flex flex-col justify-center font-sans items-center  my-5 mb-10'>
 
       <div className='w-full h-[150px] flex flex-col justify-center items-center'>
         <h1 className='text-white text-center text-3xl font-extrabold'>About Us</h1>

@@ -7,7 +7,7 @@ function HomeWeatherCards() {
     const [error, setError] = useState(null);
 
     const apiKey = import.meta.env.VITE_WEATHER_API_KEY;
-    const cities = ['New York', 'London', 'Paris', 'Abuja', 'Tokyo', 'Rio'];
+    const cities = ['New York', 'Lagos', 'London', 'Paris',];
 
     useEffect(() => {
         const fetchWeatherData = async () => {
@@ -48,7 +48,7 @@ function HomeWeatherCards() {
     if (error) return <p className="text-red-500">{error}</p>;
 
     return (
-        <div className="w-full flex flex-col bg-white rounded-md justify-center p-4 md:w-[90%] gap-[100px] md:gap-1">
+        <div className="w-full flex flex-col bg-white rounded-md justify-center p-4 md:w-[90%] gap-[100px] md:gap-1 ">
             <div className='h-[100px] '>
                 <h1 className='text-center text-[40px] font-extrabold '>Your trusted Weather Companion</h1>
             </div>
@@ -56,8 +56,9 @@ function HomeWeatherCards() {
                 {weatherData.map((data, index) => (
                     <div
                         key={index}
-                        className="w-[390px] h-[400px] bg-white flex flex-col gap-6 justify-evenly 
-                        shadow-custom rounded-md md:w-[500px] border-[3px] border-[#2a93bd] "
+                        className="w-[390px] h-[400px] bg-[#2a93bd] text-white flex flex-col gap-6 justify-evenly 
+                        shadow-custom rounded-md md:w-[400px] border-[3px] border-[black]
+                        pb- "
                     >
                         <div className="w-full h-[150px] flex">
                             <div className="w-1/2 flex flex-col gap-1 p-1 justify-center">
@@ -77,21 +78,21 @@ function HomeWeatherCards() {
                             </div>
                         </div>
                         <div className="w-full h-[100px] flex flex-col justify-center">
-                            <h1 className="h-full text-[60px] text-center">{Math.round(data.main.temp)}℃</h1>
+                            <h1 className="h-full text-[50px] text-center">{Math.round(data.main.temp)}℃</h1>
                         </div>
                         <div className="w-full h-[100px] flex flex-row justify-evenly items-center">
                             <div className="w-1/2 flex flex-row items-center justify-center">
-                                <img className="w-[55px]" src="./assets/humidity.png" alt="humidity-icon" />
+                                <img className="w-[50px]" src="./assets/humidity.png" alt="humidity-icon" />
                                 <div>
-                                    <h1 className="text-[20px]">{data.main.humidity}%</h1>
-                                    <p className="text-[14px]">Humidity</p>
+                                    <h1 className="text-[15px] md:text-[20px]">{data.main.humidity}%</h1>
+                                    <p className="text-[12px]  md:text-[15px] ">Humidity</p>
                                 </div>
                             </div>
                             <div className="w-1/2 flex flex-row items-center justify-center">
-                                <img className="w-[55px]" src="./assets/wind.png" alt="wind-icon" />
+                                <img className="w-[50px]" src="./assets/wind.png" alt="wind-icon" />
                                 <div>
-                                    <h1 className="text-[20px]">{data.wind.speed}m/s</h1>
-                                    <p className="text-[14px]">Wind Speed</p>
+                                    <h1 className="text-[15px] md:text-[20px]">{data.wind.speed}m/s</h1>
+                                    <p className="text-[12px]  md:text-[15px] ">Wind Speed</p>
                                 </div>
                             </div>
                         </div>
